@@ -3,11 +3,11 @@ const app = express()
 
 app.post('/', (req, res) => {
   // 在这里可以进行其他处理，
-  res.send(req.body);
+  res.send('Welcome_post '+req.body);
 });
 
 app.get('/', (req, res) => {
-  res.send('Welcome');
+  res.send('Welcome_get'+req.body);
 });
 
 const port = process.env.PORT || 80
